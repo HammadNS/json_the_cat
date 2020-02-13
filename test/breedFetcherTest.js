@@ -21,7 +21,7 @@ describe('fetchBreedDescription', () => {
 
 
 
-it('should return breed name not found message for an invalid breed, via callback', (done) => {
+it('should let you know that the breed was not found', (done) => {
   fetchBreedDescription('undefined', (err, desc) => {
     assert.equal(err, null);
     const expectedDesc = "undefined not found";
